@@ -11,4 +11,9 @@
 ## end
 ##
 
+coreo_aws_vpc subnet "${CC-AWS-ELEM_VPC_NAME}" do
+  action :find_or_create
+  cidr "${CC-AWS-ELEM_VPC_OCTETS}/${CC-AWS-ELEM_VPC_MASK}"
+  internet_gateway true
+end
 
