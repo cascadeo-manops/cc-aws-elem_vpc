@@ -1,13 +1,13 @@
 variables:
-    CC-AWS-ELEM_VPC_NAME:
+    VPC_NAME:
         required: false
         description: The name of the VPC
         default: cc-default_vpc
-    CC-AWS-ELEM_VPC_OCTETS:
+    VPC_OCTETS:
         required: false
         description: The network for the VPC
         default: 10.0.0.0
-    CC-AWS-ELEM_VPC_MASK:
+    VPC_MASK:
         required: false
         description: The network mask for the VPC
         default: "16"

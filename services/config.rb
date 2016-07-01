@@ -11,9 +11,9 @@
 ## end
 ##
 
-coreo_aws_vpc_vpc "${CC-AWS-ELEM_VPC_NAME}" do
+coreo_aws_vpc_vpc "${VPC_NAME}" do
   action :find_or_create
-  cidr "${CC-AWS-ELEM_VPC_OCTETS}/${CC-AWS-ELEM_VPC_MASK}"
+  cidr "${VPC_OCTETS}/${VPC_MASK}"
   internet_gateway true
 end
 
